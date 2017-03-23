@@ -3,8 +3,6 @@ package com.sda.vat;
 import java.math.BigDecimal;
 import java.util.LinkedList;
 
-import static oracle.jrockit.jfr.events.Bits.floatValue;
-
 public class Main {
 
     static final BigDecimal vat = BigDecimal.valueOf(1.23);
@@ -22,7 +20,6 @@ public class Main {
             kwoty.add(kwota);
             kwotyVat.add(kwota.multiply(vat));
 
-            System.out.println("Kwota: " + kwoty + " kwota vat: " + kwotyVat);
             count += 10;
         }
     }
